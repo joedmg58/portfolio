@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Author -->
+    <meta name="author" content="Joed Machado">
+    <!-- Description -->
+    <meta name="description" content="Web Development Portfolio">
+    <!-- Keywords -->
+    <meta name="keywords" content="html, css, html5, css3, portfolio, web development">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Portfolio - Joed Machado">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="Website">
+    <meta property="og:image" content="assets/images/splash.png">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.svg">
+
+    <title>Portfolio - Joed Machado</title>
+
+    <!-- Styles -->
+    <!-- Google font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Major+Mono+Display|Open+Sans">
+    <!--Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="background"></div> 
+
+        <div class="navbar">
+            <ul class="menu">
+                <li id="menu-home" class="menu-items menu-active" onclick="menuClick('home')">Home</li>
+                <li id="menu-portfolio" class="menu-items" onclick="menuClick('portfolio')">Portfolio</li>
+                <li id="menu-about" class="menu-items" onclick="menuClick('about')">About</li>
+                <li id="menu-contact" class="menu-items" onclick="menuClick('contact')">Contact</li>
+            </ul>
+            <a href="javascript:void(0);" class="menu-icon" onclick="menuIconClick()">
+                <i class="material-icons md-36">menu</i>                
+            </a>
+        </div>
+
+        <div class="home page page-active">
+            <h1>JOED MACHADO</h1>
+            <img id="idPicture" src="assets/images/joedmachado.png" alt="Joed Machado Picture">
+            <h3>Welcome to my portfolio.</h3>
+            <p>I am a web developer. I have a background in electronics and I love how to software and electronics integrates. Fan of artificial inteligence.</p>
+        </div>
+
+        <div class="portfolio page">
+            Portfolio
+            <div class="card-container">
+
+                <div class="card">
+                    <img src="assets/images/3055-06.jpg" alt="image" class="card-image">
+                    <div class="card-content">
+                        <div class="card-title">This is a card title</div>
+                        <div class="card-description">Laborum culpa mollit Lorem enim enim eu culpa cupidatat. Velit minim nulla laboris aute sunt proident. Dolore ex sit laboris ad dolor est esse. Amet sit exercitation nulla ut et nostrud. Amet nostrud eiusmod aute laboris elit eu aute. Incididunt ex elit proident duis.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="about page">
+            About
+        </div>
+
+        <div class="contact page">
+            Contact
+        </div>
+
+        <footer>
+            <div class="footer-content">
+                &copy Joed Machado. 2019.
+            </div>
+        </footer>
+        
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="assets/js/portfolio.json"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
